@@ -18,7 +18,7 @@ except Exception as e:
 # Configure Streamlit page
 st.set_page_config(
     page_title="SafeBite",
-    page_icon="assets/favicon.ico",  # Path to your favicon
+    page_icon="assets/favicon.jpg",  # Path to your favicon
     layout="centered"
 )
 
@@ -90,7 +90,7 @@ if submit:
             else:
                 st.success(f"✅ {food_product} does not contain allergens. Safe to proceed!")
         except Exception as e:
-            st.error(f" ⚠️ An error occurred during prediction: {e}")
+            st.error(f"⚠️ An error occurred during prediction: {e}")
 
 # Footer with "All Rights Reserved" message
 st.markdown("""
